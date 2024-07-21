@@ -34,4 +34,4 @@ colmap image_undistorter \
     --output_type=COLMAP
 
 python projects/neuralangelo/scripts/convert_data_to_json.py --data_dir ${1} --scene_type object
-python projects/neuralangelo/scripts/generate_config.py --sequence_name $(basename ${1}) --data_dir ${1} --scene_type object
+python projects/neuralangelo/scripts/generate_config.py --sequence_name $(basename ${1}) --data_dir ${1} --scene_type object --auto_exposure_wb
